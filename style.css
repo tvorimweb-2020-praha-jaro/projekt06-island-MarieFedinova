@@ -177,6 +177,7 @@ footer {
 
     .foto:hover .fotka {
         transform: scale(1.1);
+        transition: transform 0.2s;
     }
 
     .tmavy {
@@ -187,11 +188,12 @@ footer {
         bottom: 0;
         padding-top: 5px;
         padding-bottom: 5px;
-        display: none;
+        transform: translateY(100%);
+        transition: transform 0.2s;
     }
 
     .foto:hover .tmavy {
-        display: block;        
+        transform: translateY(0);
     }
 }
 
@@ -224,7 +226,7 @@ footer {
         color: white;
     }
 
-    .uvod {
+    #uvod {
         padding: 20px 20px 20px 300px;
     }
 
@@ -244,12 +246,12 @@ footer {
         transform: translateX(-40px);
     }
 
-    .proc p {
+    #proc p {
         width: 700px;
     }
 
-    .co_videt p,
-    .co_videt h2 {
+    #co_videt p,
+    #co_videt h2 {
         padding-left: 200px;
     }
 
